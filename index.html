@@ -9,6 +9,16 @@
 		<title>Diwen Xue</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+		<script>
+			function toggleBib(bibName) {
+			  var x = document.getElementById(bibName);
+			  if (x.style.display === "none") {
+				x.style.display = "block";
+			  } else {
+				x.style.display = "none";
+			  }
+			}
+			</script>
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
 	<body class="is-preload">
@@ -31,49 +41,106 @@
 						<header class="major">
 							<h2>About me<br />
 						</header>
-						<p>I am a second year PhD student in Computer Science at the University of Michigan where I am working with Prof. Roya Ensafi. My research focuses on areas where the privacy, security and availability implications of networked systems affect users in the real world. My interests include network security, Internet measurement, and censorship study. Lately, I'm also interested in building and testing censorship circumvention tools and how to deliver them to users from restrictive networks.</p>
+						<p> I am a second year PhD student in Computer Science at the University of Michigan where I am working with Prof. Roya Ensafi. My research focuses on areas where the privacy, security and availability implications of networked systems affect users in the real world. My interests include network security, Internet measurement, and censorship study. Lately, I'm also interested in building and testing censorship circumvention tools and how to deliver them to users from restrictive networks.</p>
 						<p> Download my CV <a href="https://diwenx.com/assets/files/CV.pdf">Here</a> </p>
 						
 					</section>
 
 				<!-- Two -->
 					<section id="two">
-						<h2>Recent Work</h2>
-						<div class="row">
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/01.jpg" class="image fit thumb"><img src="images/thumbs/01.jpg" alt="" /></a>
-								<h3>Magna sed consequat tempus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/02.jpg" class="image fit thumb"><img src="images/thumbs/02.jpg" alt="" /></a>
-								<h3>Ultricies lacinia interdum</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/03.jpg" class="image fit thumb"><img src="images/thumbs/03.jpg" alt="" /></a>
-								<h3>Tortor metus commodo</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/04.jpg" class="image fit thumb"><img src="images/thumbs/04.jpg" alt="" /></a>
-								<h3>Quam neque phasellus</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/05.jpg" class="image fit thumb"><img src="images/thumbs/05.jpg" alt="" /></a>
-								<h3>Nunc enim commodo aliquet</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
-							<article class="col-6 col-12-xsmall work-item">
-								<a href="images/fulls/06.jpg" class="image fit thumb"><img src="images/thumbs/06.jpg" alt="" /></a>
-								<h3>Risus ornare lacinia</h3>
-								<p>Lorem ipsum dolor sit amet nisl sed nullam feugiat.</p>
-							</article>
+						<h2>Publications</h2>
+						
+						<div>
+							<p><h3 class="paper-titles"><a href="https://diwenx.com"> Centralized Control: Brought to you by Russia's TSPU</a>
+<button style="margin-left:10px; background:white; font-size:small" onclick="toggleBib('Xue2022TSPU')"><a class="goblue">Bib</a></button> </br>
+<div id="Xue2022TSPU" style="display:none">
+<pre style="white-space: pre-wrap">
+@inproceedings{Xue2022TSPU,
+author = {Diwen Xue and Benjamin Mixon-Baca and ValdikSS and Anna Ablove and Beau Kujath and Jedidiah R. Crandall and Roya Ensafi},
+title = {{Centralized Control: Brought to you by Russia's TSPU}},
+booktitle = {Proceedings of the 22st ACM Internet Measurement Conference},
+year = {2022},
+address = {Nice, France},
+publisher = {Association for Computing Machinery}
+}	
+</pre>	
+</h3>
+							<u><b>Diwen Xue</b></u>, <small style="font-size:12pt;">B.Mixon-Baca, ValdikSS, A. Ablove, B. Kujath, J. Crandall, and R. Ensafi</small></br>
+							<b><i>To Appear In:</i></b> Internet Measurement Conference 2022 , (IMC '22). </br>
+							</p>
 						</div>
-						<ul class="actions">
-							<li><a href="#" class="button">Full Portfolio</a></li>
-						</ul>
+
+
+						<div>
+							<p><h3 class="paper-titles"><a href="https://www.usenix.org/conference/usenixsecurity22/presentation/xue-diwen"> OpenVPN is Open to VPN Fingerprinting</a>
+<button style="margin-left:10px; background:white; font-size:small" onclick="toggleBib('Xue2022OpenVPN')"><a class="goblue">Bib</a></button> </br>
+<div id="Xue2022OpenVPN" style="display:none">
+<pre style="white-space: pre-wrap">
+@inproceedings {Xue2022OpenVPN,
+	author = {Diwen Xue and Reethika Ramesh and Arham Jain and Michalis Kallitsis and J. Alex Halderman and Jedidiah R. Crandall and Roya Ensafi},
+	title = {{OpenVPN} is Open to {VPN} Fingerprinting},
+	booktitle = {31st USENIX Security Symposium (USENIX Security 22)},
+	year = {2022},
+	address = {Boston, MA},
+	publisher = {USENIX Association},
+}
+
+</pre>	
+</h3>
+							<u><b>Diwen Xue</b></u>, <small style="font-size:12pt;">R. Ramesh, A. Jain, M. Kallitsis, J. Halderman, J. Crandall, and R. Ensafi</small></br>
+							<b><i>In:</i></b> USENIX Security Symposium 2022 (USENIX Security '22). </br>
+							<b>Distinguished paper award 🏆</b><br>  
+							<b>Won First Place in the 2022 USENIX/Meta Internet Defense Prize</a> 🏆</b><br>
+							</p>
+						</div>
+
+
+						<div>
+        					<p></p><h3 class="paper-titles"><a href="https://www.ndss-symposium.org/ndss-paper/auto-draft-244/">VPNalyzer: Systematic Investigation of the VPN Ecosystem</a>
+<button style="margin-left:10px; background:white; font-size:small" onclick="toggleBib(&#39;Ramesh2022VPNalyzer&#39;)"><a class="goblue">Bib</a></button> <br>
+<div id="Ramesh2022VPNalyzer" style="display:none">
+<pre style="white-space: pre-wrap">@inproceedings{Ramesh2022VPNalyzer,
+author = {Reethika Ramesh and Leonid Evdokimov and Diwen Xue and Roya Ensafi},
+title = {{VPNalyzer: Systematic Investigation of the VPN Ecosystem}},
+booktitle = {Network and Distributed System Security},
+publisher = {The Internet Society},
+year = {2022},
+url = {https://dx.doi.org/10.14722/ndss.2022.24285}
+}
+</pre>
+</div></h3>
+      						<small style="font-size:12pt;">Reethika Ramesh, L. Evdokimov, </small><u><b>Diwen Xue</b></u>, <small style="font-size:12pt;">and R. Ensafi</small><br>
+							  <b><i>In:</i></b> Network and Distributed System Security Symposium 2022 (NDSS '22). </br>
+        					<p></p>
+    					</div>
+
+
+						<div>
+							<p><h3 class="paper-titles"><a href="https://diwenx.com/assets/files/throttling-imc21.pdf"> Throttling Twitter: An Emerging Censorship Technique in Russia</a>
+<button style="margin-left:10px; background:white; font-size:small" onclick="toggleBib('Xue2021Throttling')"><a class="goblue">Bib</a></button> </br>
+<div id="Xue2021Throttling" style="display:none">
+<pre style="white-space: pre-wrap">
+@inproceedings{Xue2021Throttling,
+author = author = {Xue Diwen and Ramesh Reethika and ValdikSS and Leonid Evdokimov and Andrey Viktorov and Arham Jain and Eric Wustrow and Simone Basso and Roya Ensafi},
+title = {{Throttling Twitter: An Emerging Censorship Technique in Russia}},
+booktitle = {Proceedings of the 21st ACM Internet Measurement Conference},
+year = {2021},
+address = {Virtual Event},
+publisher = {Association for Computing Machinery}
+}	
+</pre>	
+</h3>
+							<u><b>Diwen Xue</b></u>, <small style="font-size:12pt;">R. Ramesh, ValdikSS, L. Evdokimov, A. Viktorov, A. Jain, E. Wustrow, S. Basso, and R. Ensafi</small></br>
+							<b><i>In:</i></b> Internet Measurement Conference 2021 , (IMC '21). </br>
+							<b>Recognized as the Highest Scoring Short Paper at IMC'21 🏆</a></b><br>
+							</p>
+						</div>
+
+
+
+
+
+
 					</section>
 
 				<!-- Three -->
@@ -439,9 +506,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 				<div class="inner">
 					<ul class="icons">
 						<li><a href="https://twitter.com/diwenxue" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-						<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						<li><a href="mailto:emmanuelxue@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
 						<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
